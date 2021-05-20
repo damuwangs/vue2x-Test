@@ -41,105 +41,6 @@ const dateFormat = function (date, format) {
   return format
 }
 
-// element-ui table格式化公用filters
-const tableFormats = {
-  // 普通格式化数据，空的时候展示"---"
-  simpleFormatData (row, col, cellValue) {
-    return cellValue || '---'
-  },
-  // 格式化日期
-  formatDate (row, col, cellValue) {
-    return cellValue ? dateFormat(cellValue, 'yyyy-MM-dd') : '---'
-  },
-  // 格式化时间
-  formatTime (row, col, cellValue) {
-    return cellValue ? dateFormat(cellValue, 'yyyy-MM-dd hh:mm:ss') : '---'
-  },
-  // 格式化金额，保存2位小数
-  formatMoney2Digit (row, col, cellValue) {
-    return (cellValue !== undefined && cellValue !== null) ? number_format(cellValue, 2) : '---'
-  },
-  // 格式化金额，保存4位小数
-  formatMoney6Digit (row, col, cellValue) {
-    return (cellValue !== undefined && cellValue !== null) ? number_format(cellValue, 6) : '---'
-  },
-  // 取消金额格式化
-  unFormatMoney (row, col, cellValue) {
-    return (cellValue !== undefined && cellValue !== null) ? rMoney(cellValue) : '---'
-  }
-}
-
-const commonTransform = {
-  // 格式化三级地址信息
-  transformAddress (privinceId, cityId, countyId) {
-    let newAddress = {}
-    region.CityInfo.map((item) => {
-      if (item.value === privinceId) {
-        newAddress.province = item.label
-        item.children.map((ite) => {
-          if (ite.value === cityId) {
-            newAddress.city = ite.label
-            ite.children.map((countyItem) => {
-              if (countyItem.value === countyId) {
-                newAddress.country = countyItem.label
-              }
-            })
-          }
-        })
-      }
-    })
-    return newAddress
-  },
-  // 格式化三级行业
-  // transformIndustry (firstValue, secondValue, thirdValue) {
-  //   let newIndustry = {}
-  //   industry.industry.map((item) => {
-  //     if (item.value === firstValue) {
-  //       newIndustry.firstLabel = item.label
-  //       item.children.map((ite) => {
-  //         if (ite.value === secondValue) {
-  //           newIndustry.secondLabel = ite.label
-  //           ite.children.map((it) => {
-  //             if (it.value === thirdValue) {
-  //               newIndustry.thirdLabel = it.label
-  //             }
-  //           })
-  //         }
-  //       })
-  //     }
-  //   })
-  //   return newIndustry
-  // },
-}
-
-// element-ui 详情格式化公用filters
-const formatFilters = {
-  // 普通格式化数据，空的时候展示"---"
-  formatData (row, col, value) {
-    return value ? value : '---'
-  },
-  // 格式化时间
-  formatDate (value) {
-    return value ? dateFormat(value, 'yyyy-MM-dd') : '---'
-  },
-  // 格式化时间
-  formatTime (value) {
-    return value ? dateFormat(value, 'yyyy-MM-dd hh:mm:ss') : '---'
-  },
-  // 格式化金额，保存2位小数
-  formatMoney2Digit (value) {
-    return (value !== undefined && value !== null) ? number_format(value, 2) : '---'
-  },
-  // 格式化金额，保存4位小数
-  formatMoney6Digit (value) {
-    return (value !== undefined && value !== null) ? number_format(value, 6) : '---'
-  },
-  // 取消金额格式化
-  unFormatMoney (value) {
-    return (value !== undefined && value !== null) ? rMoney(value) : '---'
-  }
-}
-
 // 数组过滤（匹配某菜单下所有方法）
 const filterarr = function (sysId, menuId) {
   let array = JSON.parse(localStorage.getItem('FUNCTIONS'))
@@ -282,4 +183,4 @@ const getDateDiff = function(startTime, endTime, diffType) {
   return parseInt((eTime.getTime() - sTime.getTime()) / parseInt(divNum));
 }
 
-export {parseDate, trimStr, extend, dateFormat,  tableFormats, formatFilters, commonTransform, filterarr, parseTime, getPrevDate, isDuringTime, removeByValue, getYMDHMS, getDateDiff}
+export {parseDate, trimStr, extend, dateFormat, filterarr, parseTime, getPrevDate, isDuringTime, removeByValue, getYMDHMS, getDateDiff}
