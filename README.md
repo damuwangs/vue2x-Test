@@ -1,7 +1,5 @@
 # wcy
 
-> LongTaoLi
-
 Build Setup
 
 ``` bash
