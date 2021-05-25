@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <h1>公共组件库</h1>
-        <!-- <h2 @click="takePhoto">1、拍照</h2> -->
+        <h2 @click="toRoutes('treeselect')">1、基于Element-UI的TreeSelect树形选择器</h2>
     </div>
 </template>
 
@@ -15,6 +15,9 @@ export default {
     },
  
     methods: {
+        toRoutes(path){
+            this.$router.push({ path: path})
+        }
     },
 }
 </script>
