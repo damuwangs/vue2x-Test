@@ -75,6 +75,7 @@ export default {
                     )
                 }
             }
+        console.log('this.list = ', this.list);
         }
     }
 }

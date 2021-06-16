@@ -6,6 +6,7 @@ import elementui from '@/components/2、ElementUI'
 import vue3 from '@/components/3、Vue3'
 import utiljs from '@/components/JS方法库'
 import utilComponents from '@/components/公共组件库'
+import test from '@/components/测试'
 
 Vue.use(Router)
 let routesArray = [{
@@ -18,6 +19,7 @@ routesArray.push(...elementui)
 routesArray.push(...vue3)
 routesArray.push(...utiljs)
 routesArray.push(...utilComponents)
+routesArray.push(...test)
 
 
 let MainRouter = new Router({

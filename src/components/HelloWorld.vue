@@ -6,6 +6,7 @@
 		  <h2 @click="toRoutes('vue3')">3、Vue3</h2>
 		  <h2 @click="toRoutes('utiljs')">JS方法库</h2>
 		  <h2 @click="toRoutes('utilcomponents')">公共组件库</h2>
+		  <h2 @click="toRoutes('test')">测试</h2>
   </div>
 </template>
 
