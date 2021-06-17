@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <h1>ElementUI</h1>
-        <!-- <h2 @click="takePhoto">1、拍照</h2> -->
+        <h2 @click="toRoutes('elementForm')">1、Form表单</h2>
     </div>
 </template>
 
@@ -13,9 +13,10 @@ export default {
     },
     created(){
     },
- 
     methods: {
-
-    },
+        toRoutes(path) {
+            this.$router.push({ path: path });
+        }
+    }
 }
 </script>

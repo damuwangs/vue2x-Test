@@ -1,10 +1,8 @@
 // 手机号验证
 export function validateFixedPhone (str) {
-  const reg = /^1(3[0-9]|4[5,7,9]|5[0,1,2,3,5,6,7,8,9]|6[2,5,6,7]|7[0,1,3,5,6,7,8]|8[0-9]|9[1,8,9])\d{8}$/
+  const reg = /^((0\d{2,3}-\d{7,8})|(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8})$/;
   return reg.test(str)
 }
-
-
 export function validPhone (rule, value, callback) {
   if (!value) {
     callback()
@@ -14,6 +12,7 @@ export function validPhone (rule, value, callback) {
     callback()
   }
 }
+
 // 网址校验
 export function validateUrl (str) {
 	const reg = /^\b(((https?|ftp):\/\/)?[-a-z0-9]+(\.[-a-z0-9]+)*\.(?:com|edu|gov|int|mil|net|org|biz|info|name|museum|asia|coop|aero|[a-z][a-z]|((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]\d)|\d))\b(\/[-a-z0-9_:\@&?=+,.!\/~%\$]*)?)$/i
@@ -28,13 +27,13 @@ export function validUrl (rule, value, callback) {
     callback()
   }
 }
+
 // 邮箱验证
 export function validateEmail (str) {
   const reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
   return reg.test(str)
 }
-
-export function validEmail (rule, value, callback) {
+export function validEmail (value, callback) {
   if (!value) {
     callback()
   } else if (!validateEmail(value)) {
@@ -45,15 +44,7 @@ export function validEmail (rule, value, callback) {
 }
 
 //身份证验证
-export function checkIdNum(rule, value, callback) {
-  // const reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
-  // if (!value) {
-  //   return callback(new Error('证件号码不能为空'))
-  // } else if (!reg.test(value)) {
-  //   return callback(new Error('请输入正确的证件号码'))
-  // } else {
-  //   callback()
-  // }
+export function checkIdNum(value, callback) {
   if (value){
     var coefficientArr = [ 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2 ];
     var sum = 0;
@@ -84,6 +75,7 @@ export function checkIdNum(rule, value, callback) {
     return callback()
   }
 }
+
 // 价格验证
 export function validatePrice (rule, value, callback) {
   const reg = /^-?\d{1,6}(?:\.\d{1,2})?$/
