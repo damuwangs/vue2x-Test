@@ -7,6 +7,7 @@
     <h2 @click="toRoutes('elementui')">- ElementUI</h2>
     <h2 @click="toRoutes('vue3')">- Vue3</h2>
     <h2 @click="toRoutes('test')">测试</h2>
+    <i class="iconfont icon-qiyeguanli"></i>
   </div>
 </template>
 

@@ -9,6 +9,7 @@ import Vuex from "vuex";
 import cordova from "./components/common/cordova.js";
 import "../static/common.css";
 import ElementUI from "element-ui";
+import './assets/icon/iconfont.css'
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
 Vue.use(Vuex);

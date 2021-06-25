@@ -1,0 +1,128 @@
+{
+  "id": "2557896",
+  "name": "顺心畅游管理系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "顺心畅游管理系统",
+  "glyphs": [
+    {
+      "icon_id": "3670134",
+      "name": "隐藏",
+      "font_class": "tubiaolunkuo-",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5485672",
+      "name": "显示",
+      "font_class": "xianshi",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "8081367",
+      "name": "功能",
+      "font_class": "iconfront-",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "410313",
+      "name": "平台信息管理",
+      "font_class": "pingtaixinxiguanli",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "691770",
+      "name": "合同管理",
+      "font_class": "hetongguanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "742142",
+      "name": "组织管理",
+      "font_class": "zuzhiguanli",
+      "unicode": "ea72",
+      "unicode_decimal": 60018
+    },
+    {
+      "icon_id": "823176",
+      "name": "隐藏",
+      "font_class": "yincang",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "1546575",
+      "name": "信息列表",
+      "font_class": "xinxiliebiao",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "4244769",
+      "name": "员工管理",
+      "font_class": "yuangongguanli",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7177166",
+      "name": "合同列表",
+      "font_class": "hetongliebiao-",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "14978142",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "18892296",
+      "name": "员工列表",
+      "font_class": "pingtaiiconhuizong_huaban1fuben12",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "21671240",
+      "name": "企业管理",
+      "font_class": "qiyeguanli",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1440390",
+      "name": "修改密码",
+      "font_class": "xiugaimima",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "6166281",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "11688055",
+      "name": "退出登录",
+      "font_class": "tuichudenglu",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "12497993",
+      "name": "账户信息",
+      "font_class": "zhanghuxinxi",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
