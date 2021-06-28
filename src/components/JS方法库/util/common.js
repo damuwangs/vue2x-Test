@@ -1,4 +1,4 @@
-import * as region from '@/assets/js/region'
+// import * as region from '@/assets/js/region'
 
 // 将yyyy-MM-dd hh:mm:ss转换为Date对象
 const parseDate = (date) => {
