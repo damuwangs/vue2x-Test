@@ -1,7 +1,6 @@
 <template>
     <div class="content">
-        <h1>Vue3</h1>
-        <!-- <h2 @click="takePhoto">1、拍照</h2> -->
+        <el-input v-model="input" placeholder="请输入内容"></el-input>
     </div>
 </template>
 
@@ -9,12 +8,10 @@
 export default {
   data () {
         return {
+            input: '默认值'
         }
     },
-    created(){
-    },
- 
     methods: {
-    },
+    }
 }
 </script>
