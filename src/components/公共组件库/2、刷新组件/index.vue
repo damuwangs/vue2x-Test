@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import son from '@/components/Vue2/2、刷新组件/son.vue'
+import son from '@/components/公共组件库/2、刷新组件/son.vue'
 export default {
     components:{son},
     data () {
